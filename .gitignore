@@ -1,0 +1,6 @@
+# Files larger than 20 MB at repository initialization
+/data/plastome/alloutgroup/Quercus_globosa_plastome.allsite.vcf.gz
+/data/outgroups/rvisitor 2026-06-22_16h35m06s.png
+
+# Specimen image collection excluded from this repository
+/Quercus arkansana Images/

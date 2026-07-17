@@ -1,0 +1,264 @@
+---
+title: "Quercus Plastome VCF Basic Statistics"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: readable
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 10,
+  fig.height = 5.8
+)
+
+library(ggplot2)
+
+stats_dir <- file.path(getwd(), "bcftools_stats")
+stats_files <- sort(list.files(stats_dir, pattern = "\\.stats\\.txt$", full.names = TRUE))
+
+clean_vcf_name <- function(path) {
+  sub("\\.stats\\.txt$", "", basename(path))
+}
+
+read_section <- function(path, tag) {
+  lines <- readLines(path, warn = FALSE)
+  section_lines <- grep(paste0("^", tag, "\t"), lines, value = TRUE)
+  if (!length(section_lines)) {
+    return(data.frame())
+  }
+  fields <- strsplit(section_lines, "\t", fixed = TRUE)
+  width <- max(vapply(fields, length, integer(1)))
+  mat <- t(vapply(fields, function(x) {
+    length(x) <- width
+    x
+  }, character(width)))
+  as.data.frame(mat, stringsAsFactors = FALSE)
+}
+
+as_numeric_columns <- function(x, skip = character()) {
+  for (nm in setdiff(names(x), skip)) {
+    suppressWarnings({
+      converted <- as.numeric(x[[nm]])
+    })
+    if (!all(is.na(converted) & !is.na(x[[nm]]))) {
+      x[[nm]] <- converted
+    }
+  }
+  x
+}
+
+parse_summary <- function(path) {
+  sn <- read_section(path, "SN")
+  if (!nrow(sn)) {
+    return(data.frame())
+  }
+  names(sn)[1:4] <- c("section", "id", "metric", "value")
+  sn$metric <- sub(":$", "", sn$metric)
+  sn$value <- as.numeric(sn$value)
+  wide <- as.data.frame(t(setNames(sn$value, sn$metric)), check.names = FALSE)
+  wide$vcf <- clean_vcf_name(path)
+  wide[, c("vcf", setdiff(names(wide), "vcf"))]
+}
+
+parse_tstv <- function(path) {
+  x <- read_section(path, "TSTV")
+  if (!nrow(x)) {
+    return(data.frame())
+  }
+  names(x)[1:8] <- c(
+    "section", "id", "transitions", "transversions", "ts_tv",
+    "transitions_first_alt", "transversions_first_alt", "ts_tv_first_alt"
+  )
+  x$vcf <- clean_vcf_name(path)
+  x <- x[, c("vcf", names(x)[!(names(x) %in% c("vcf", "section", "id"))])]
+  as_numeric_columns(x, skip = "vcf")
+}
+
+parse_af <- function(path) {
+  x <- read_section(path, "AF")
+  if (!nrow(x)) {
+    return(data.frame())
+  }
+  names(x)[1:10] <- c(
+    "section", "id", "allele_frequency", "snps", "transitions",
+    "transversions", "indels", "repeat_consistent",
+    "repeat_inconsistent", "not_applicable"
+  )
+  x$vcf <- clean_vcf_name(path)
+  x <- x[, c("vcf", names(x)[!(names(x) %in% c("vcf", "section", "id"))])]
+  as_numeric_columns(x, skip = "vcf")
+}
+
+parse_qual <- function(path) {
+  x <- read_section(path, "QUAL")
+  if (!nrow(x)) {
+    return(data.frame())
+  }
+  names(x)[1:7] <- c(
+    "section", "id", "quality", "snps",
+    "transitions_first_alt", "transversions_first_alt", "indels"
+  )
+  x$vcf <- clean_vcf_name(path)
+  x <- x[, c("vcf", names(x)[!(names(x) %in% c("vcf", "section", "id"))])]
+  as_numeric_columns(x, skip = "vcf")
+}
+
+summary_df <- do.call(rbind, lapply(stats_files, parse_summary))
+tstv_df <- do.call(rbind, lapply(stats_files, parse_tstv))
+af_df <- do.call(rbind, lapply(stats_files, parse_af))
+qual_df <- do.call(rbind, lapply(stats_files, parse_qual))
+
+summary_df$variant_density_per_sample <- with(
+  summary_df,
+  `number of records` / `number of samples`
+)
+
+variant_long <- data.frame(
+  vcf = rep(summary_df$vcf, each = 4),
+  variant_class = rep(c("SNPs", "Indels", "Multiallelic sites", "Multiallelic SNP sites"), nrow(summary_df)),
+  count = c(
+    rbind(
+      summary_df$`number of SNPs`,
+      summary_df$`number of indels`,
+      summary_df$`number of multiallelic sites`,
+      summary_df$`number of multiallelic SNP sites`
+    )
+  )
+)
+```
+
+Generated on `r format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")` from `r length(stats_files)` VCF files using `bcftools stats` outputs in `r stats_dir`.
+
+# Input VCFs
+
+```{r input-files}
+knitr::kable(
+  data.frame(
+    vcf = clean_vcf_name(stats_files),
+    stats_file = basename(stats_files),
+    stringsAsFactors = FALSE
+  ),
+  caption = "VCF files included in this report."
+)
+```
+
+# Summary Counts
+
+```{r summary-table}
+summary_table <- summary_df[, c(
+  "vcf",
+  "number of samples",
+  "number of records",
+  "number of SNPs",
+  "number of indels",
+  "number of multiallelic sites",
+  "number of multiallelic SNP sites",
+  "variant_density_per_sample"
+)]
+summary_table$variant_density_per_sample <- round(summary_table$variant_density_per_sample, 2)
+knitr::kable(summary_table, caption = "Core summary statistics from bcftools stats.")
+```
+
+```{r variant-counts-plot}
+ggplot(variant_long, aes(x = vcf, y = count, fill = variant_class)) +
+  geom_col(position = "dodge", width = 0.72) +
+  scale_y_continuous(labels = scales::comma) +
+  labs(
+    x = NULL,
+    y = "Count",
+    fill = "Variant class",
+    title = "Variant composition by VCF"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    axis.text.x = element_text(angle = 25, hjust = 1),
+    panel.grid.minor = element_blank()
+  )
+```
+
+# Transitions And Transversions
+
+```{r tstv-table}
+if (nrow(tstv_df)) {
+  knitr::kable(tstv_df, caption = "Transition/transversion statistics.")
+} else {
+  cat("No TSTV section was present in the bcftools stats outputs.")
+}
+```
+
+```{r tstv-plot}
+if (nrow(tstv_df)) {
+  ggplot(tstv_df, aes(x = vcf, y = ts_tv)) +
+    geom_col(fill = "#2f6f73", width = 0.65) +
+    geom_text(aes(label = round(ts_tv, 2)), vjust = -0.35, size = 4) +
+    labs(
+      x = NULL,
+      y = "Ts/Tv ratio",
+      title = "Transition/transversion ratio"
+    ) +
+    theme_minimal(base_size = 13) +
+    theme(
+      axis.text.x = element_text(angle = 25, hjust = 1),
+      panel.grid.minor = element_blank()
+    )
+}
+```
+
+# Allele Frequency Spectrum
+
+```{r af-plot}
+if (nrow(af_df)) {
+  af_plot_df <- af_df
+  af_plot_df$total_variants <- af_plot_df$snps + af_plot_df$indels
+  ggplot(af_plot_df, aes(x = allele_frequency, y = total_variants, color = vcf)) +
+    geom_line(linewidth = 0.8) +
+    geom_point(size = 1.7, alpha = 0.85) +
+    scale_y_continuous(labels = scales::comma) +
+    labs(
+      x = "Non-reference allele frequency",
+      y = "SNPs + indels",
+      color = "VCF",
+      title = "Allele frequency spectrum"
+    ) +
+    theme_minimal(base_size = 13) +
+    theme(panel.grid.minor = element_blank())
+} else {
+  cat("No AF section was present in the bcftools stats outputs.")
+}
+```
+
+# Quality Distribution
+
+```{r qual-plot}
+if (nrow(qual_df)) {
+  qual_df$variant_count <- qual_df$snps + qual_df$indels
+  qual_plot_df <- aggregate(variant_count ~ vcf + quality, data = qual_df, sum)
+  ggplot(qual_plot_df, aes(x = quality, y = variant_count, color = vcf)) +
+    geom_line(linewidth = 0.8) +
+    geom_point(size = 1.5, alpha = 0.8) +
+    scale_y_continuous(labels = scales::comma) +
+    labs(
+      x = "QUAL",
+      y = "Variant count",
+      color = "VCF",
+      title = "Variant counts by QUAL"
+    ) +
+    theme_minimal(base_size = 13) +
+    theme(panel.grid.minor = element_blank())
+} else {
+  cat("No QUAL section was present in the bcftools stats outputs.")
+}
+```
+
+# Notes
+
+- Counts are from `bcftools stats`; rows containing multiple variant types can be counted in more than one class.
+- The filtered biallelic VCF contains only SNP rows in this report.
+- The allele-frequency and quality plots are shown only for sections present in the corresponding stats files.

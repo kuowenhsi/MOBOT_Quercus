@@ -1,0 +1,165 @@
+# This file was produced by bcftools stats (1.22+htslib-1.22) and can be plotted using plot-vcfstats.
+# The command line was:	bcftools stats  Quercus_plastome/Quercus_plastome.filtered.biallelic.vcf.gz
+#
+# Definition of sets:
+# ID	[2]id	[3]tab-separated file names
+ID	0	Quercus_plastome/Quercus_plastome.filtered.biallelic.vcf.gz
+# SN, Summary numbers:
+#   number of records   .. number of data rows in the VCF
+#   number of no-ALTs   .. reference-only sites, ALT is either "." or identical to REF
+#   number of SNPs      .. number of rows with a SNP
+#   number of MNPs      .. number of rows with a MNP, such as CC>TT
+#   number of indels    .. number of rows with an indel
+#   number of others    .. number of rows with other type, for example a symbolic allele or
+#                          a complex substitution, such as ACT>TCGA
+#   number of multiallelic sites     .. number of rows with multiple alternate alleles
+#   number of multiallelic SNP sites .. number of rows with multiple alternate alleles, all SNPs
+# 
+#   Note that rows containing multiple types will be counted multiple times, in each
+#   counter. For example, a row with a SNP and an indel increments both the SNP and
+#   the indel counter.
+# 
+# SN	[2]id	[3]key	[4]value
+SN	0	number of samples:	190
+SN	0	number of records:	111
+SN	0	number of no-ALTs:	0
+SN	0	number of SNPs:	111
+SN	0	number of MNPs:	0
+SN	0	number of indels:	0
+SN	0	number of others:	0
+SN	0	number of multiallelic sites:	0
+SN	0	number of multiallelic SNP sites:	0
+# TSTV, transitions/transversions
+#   - transitions, see https://en.wikipedia.org/wiki/Transition_(genetics)
+#   - transversions, see https://en.wikipedia.org/wiki/Transversion
+# TSTV	[2]id	[3]ts	[4]tv	[5]ts/tv	[6]ts (1st ALT)	[7]tv (1st ALT)	[8]ts/tv (1st ALT)
+TSTV	0	58	53	1.09	58	53	1.09
+# SiS, Singleton stats:
+#   - allele count, i.e. the number of singleton genotypes (AC=1)
+#   - number of transitions, see above
+#   - number of transversions, see above
+#   - repeat-consistent, inconsistent and n/a: experimental and useless stats [DEPRECATED]
+# SiS	[2]id	[3]allele count	[4]number of SNPs	[5]number of transitions	[6]number of transversions	[7]number of indels	[8]repeat-consistent	[9]repeat-inconsistent	[10]not applicable
+SiS	0	1	111	58	53	0	0	0	0
+# AF, Stats by non-reference allele frequency:
+# AF	[2]id	[3]allele frequency	[4]number of SNPs	[5]number of transitions	[6]number of transversions	[7]number of indels	[8]repeat-consistent	[9]repeat-inconsistent	[10]not applicable
+AF	0	0.000000	111	58	53	0	0	0	0
+# QUAL, Stats by quality
+# QUAL	[2]id	[3]Quality	[4]number of SNPs	[5]number of transitions (1st ALT)	[6]number of transversions (1st ALT)	[7]number of indels
+QUAL	0	168.9	1	1	0	0
+QUAL	0	209.8	5	3	2	0
+QUAL	0	267.0	16	12	4	0
+QUAL	0	6009.3	1	1	0	0
+QUAL	0	6115.8	1	0	1	0
+QUAL	0	8252.1	1	0	1	0
+QUAL	0	11569.9	1	0	1	0
+QUAL	0	14804.9	1	0	1	0
+QUAL	0	15464.9	1	0	1	0
+QUAL	0	15896.9	1	1	0	0
+QUAL	0	16901.9	1	1	0	0
+QUAL	0	17593.9	1	0	1	0
+QUAL	0	19132.9	1	1	0	0
+QUAL	0	19165.9	1	0	1	0
+QUAL	0	20025.9	1	0	1	0
+QUAL	0	20053.9	1	1	0	0
+QUAL	0	20831.9	1	1	0	0
+QUAL	0	20846.9	1	1	0	0
+QUAL	0	24223.9	1	1	0	0
+QUAL	0	24847.9	1	0	1	0
+QUAL	0	26554.9	1	1	0	0
+QUAL	0	27038.9	1	0	1	0
+QUAL	0	28756.9	1	1	0	0
+QUAL	0	29887.9	1	1	0	0
+QUAL	0	30863.9	1	1	0	0
+QUAL	0	31025.9	1	0	1	0
+QUAL	0	32433.9	1	1	0	0
+QUAL	0	32534.9	1	0	1	0
+QUAL	0	33813.9	1	1	0	0
+QUAL	0	33970.9	1	0	1	0
+QUAL	0	34643.9	1	0	1	0
+QUAL	0	34799.9	1	0	1	0
+QUAL	0	35921.9	1	1	0	0
+QUAL	0	36186.9	1	0	1	0
+QUAL	0	36381.9	1	0	1	0
+QUAL	0	36779.9	1	0	1	0
+QUAL	0	36783.9	1	1	0	0
+QUAL	0	37391.9	1	0	1	0
+QUAL	0	37669.9	1	0	1	0
+QUAL	0	38787.9	1	0	1	0
+QUAL	0	39012.9	1	1	0	0
+QUAL	0	39350.9	1	0	1	0
+QUAL	0	41407.9	1	0	1	0
+QUAL	0	42463.9	1	0	1	0
+QUAL	0	43186.9	1	0	1	0
+QUAL	0	45907.9	1	0	1	0
+QUAL	0	46374.9	1	0	1	0
+QUAL	0	48164.9	1	0	1	0
+QUAL	0	49312.9	1	1	0	0
+QUAL	0	49931.9	1	1	0	0
+QUAL	0	52815.9	1	0	1	0
+QUAL	0	53466.9	1	1	0	0
+QUAL	0	62028.9	1	0	1	0
+QUAL	0	62786.9	1	0	1	0
+QUAL	0	66088.9	1	1	0	0
+QUAL	0	69216.9	1	1	0	0
+QUAL	0	69924.9	1	1	0	0
+QUAL	0	70355.9	1	0	1	0
+QUAL	0	72669.9	1	0	1	0
+QUAL	0	74207.9	1	0	1	0
+QUAL	0	75613.9	1	0	1	0
+QUAL	0	78787.9	1	0	1	0
+QUAL	0	80304.9	1	1	0	0
+QUAL	0	83250.9	1	1	0	0
+QUAL	0	84034.9	1	1	0	0
+QUAL	0	85213.9	1	1	0	0
+QUAL	0	89954.9	1	0	1	0
+QUAL	0	91680.9	1	0	1	0
+QUAL	0	94691.9	1	1	0	0
+QUAL	0	95224.9	1	1	0	0
+QUAL	0	120369.9	1	0	1	0
+QUAL	0	120779.9	1	1	0	0
+QUAL	0	143059.9	1	1	0	0
+QUAL	0	163039.9	1	1	0	0
+QUAL	0	169019.9	1	0	1	0
+QUAL	0	169129.9	1	1	0	0
+QUAL	0	169839.9	1	0	1	0
+QUAL	0	182969.9	1	0	1	0
+QUAL	0	233759.9	1	1	0	0
+QUAL	0	237209.9	1	1	0	0
+QUAL	0	251969.9	1	1	0	0
+QUAL	0	264129.9	1	1	0	0
+QUAL	0	307869.9	1	0	1	0
+QUAL	0	328299.9	1	1	0	0
+QUAL	0	360829.9	1	0	1	0
+QUAL	0	432309.9	1	1	0	0
+QUAL	0	489829.9	1	0	1	0
+QUAL	0	539669.9	1	0	1	0
+QUAL	0	993399.9	1	1	0	0
+QUAL	0	1153899.9	1	1	0	0
+QUAL	0	2782100.0	1	1	0	0
+QUAL	0	3448500.0	1	0	1	0
+# IDD, InDel distribution:
+# IDD	[2]id	[3]length (deletions negative)	[4]number of sites	[5]number of genotypes	[6]mean VAF
+# ST, Substitution types:
+# ST	[2]id	[3]type	[4]count
+ST	0	A>C	10
+ST	0	A>G	11
+ST	0	A>T	7
+ST	0	C>A	5
+ST	0	C>G	1
+ST	0	C>T	20
+ST	0	G>A	15
+ST	0	G>C	2
+ST	0	G>T	8
+ST	0	T>A	4
+ST	0	T>C	12
+ST	0	T>G	16
+# DP, depth:
+#   - set id, see above
+#   - the depth bin, corresponds to the depth (unless --depth was given)
+#   - number of genotypes with this depth (zero unless -s/-S was given)
+#   - fraction of genotypes with this depth (zero unless -s/-S was given)
+#   - number of sites with this depth
+#   - fraction of sites with this depth
+# DP, Depth distribution
+# DP	[2]id	[3]bin	[4]number of genotypes	[5]fraction of genotypes (%)	[6]number of sites	[7]fraction of sites (%)

@@ -1,0 +1,352 @@
+BioSample,biosample_uid,attribute_name,harmonized_name,display_name,value
+SAMEA110381793,31958336,ENA-CHECKLIST,,,ERC000037
+SAMEA110381793,31958336,ENA-FIRST-PUBLIC,,,2022-11-30
+SAMEA110381793,31958336,ENA-LAST-UPDATE,,,2022-11-30
+SAMEA110381793,31958336,External Id,,,SAMEA110381793
+SAMEA110381793,31958336,INSDC center alias,,,INRA Bordeaux
+SAMEA110381793,31958336,INSDC center name,,,INRA Bordeaux
+SAMEA110381793,31958336,INSDC first public,,,2022-11-30T00:18:40Z
+SAMEA110381793,31958336,INSDC last update,,,2022-11-30T00:18:40Z
+SAMEA110381793,31958336,INSDC status,,,public
+SAMEA110381793,31958336,Submitter Id,,,Q.rubra
+SAMEA110381793,31958336,collection date,collection_date,collection date,2019
+SAMEA110381793,31958336,common name,,,northern red oak
+SAMEA110381793,31958336,geographic location (country and/or sea),geo_loc_name,geographic location,France
+SAMEA110381793,31958336,geographic location (latitude),,,44.74
+SAMEA110381793,31958336,geographic location (longitude),,,-0.78
+SAMEA110381793,31958336,plant structure,plant_struc,plant structure,leaf
+SAMEA110381793,31958336,sample name,sample_name,sample name,Q.rubra
+SAMEA112794809,40718716,ENA first public,,,2024-03-31
+SAMEA112794809,40718716,ENA-CHECKLIST,,,ERC000011
+SAMEA112794809,40718716,External Id,,,SAMEA112794809
+SAMEA112794809,40718716,INSDC center name,,,INRAE
+SAMEA112794809,40718716,INSDC last update,,,2023-03-17T15:29:33Z
+SAMEA112794809,40718716,INSDC status,,,public
+SAMEA112794809,40718716,Submitter Id,,,GwOak-T99
+SAMEA112794809,40718716,collection_date,collection_date,collection date,2016
+SAMEA112794809,40718716,common name,,,sessile oak
+SAMEA112794809,40718716,geographic location (country and/or sea),geo_loc_name,geographic location,France
+SAMEA112794809,40718716,geographic location (region and locality),,,Sillegny
+SAMEA112794809,40718716,provenance,,,Vachères
+SAMEA112794809,40718716,provenance_ID,,,233
+SAMEA112794809,40718716,sample name,sample_name,sample name,GwOak-T99
+SAMEA112794809,40718716,scientific_name,,,Quercus petraea
+SAMEA112794809,40718716,tissue_type,tissue,tissue,leaf
+SAMEA112794838,40718745,ENA first public,,,2024-03-31
+SAMEA112794838,40718745,ENA-CHECKLIST,,,ERC000011
+SAMEA112794838,40718745,External Id,,,SAMEA112794838
+SAMEA112794838,40718745,INSDC center name,,,INRAE
+SAMEA112794838,40718745,INSDC last update,,,2023-03-17T15:29:34Z
+SAMEA112794838,40718745,INSDC status,,,public
+SAMEA112794838,40718745,Submitter Id,,,GwOak-T186-AHT5J5DSX2
+SAMEA112794838,40718745,collection_date,collection_date,collection date,2016
+SAMEA112794838,40718745,common name,,,sessile oak
+SAMEA112794838,40718745,geographic location (country and/or sea),geo_loc_name,geographic location,France
+SAMEA112794838,40718745,geographic location (region and locality),,,Sillegny
+SAMEA112794838,40718745,provenance,,,Vachères
+SAMEA112794838,40718745,provenance_ID,,,233
+SAMEA112794838,40718745,sample name,sample_name,sample name,GwOak-T186-AHT5J5DSX2
+SAMEA112794838,40718745,scientific_name,,,Quercus petraea
+SAMEA112794838,40718745,tissue_type,tissue,tissue,leaf
+SAMEA112794849,40718756,ENA first public,,,2024-03-31
+SAMEA112794849,40718756,ENA-CHECKLIST,,,ERC000011
+SAMEA112794849,40718756,External Id,,,SAMEA112794849
+SAMEA112794849,40718756,INSDC center name,,,INRAE
+SAMEA112794849,40718756,INSDC last update,,,2023-03-17T15:29:34Z
+SAMEA112794849,40718756,INSDC status,,,public
+SAMEA112794849,40718756,Submitter Id,,,GwOak-T62
+SAMEA112794849,40718756,collection_date,collection_date,collection date,2016
+SAMEA112794849,40718756,common name,,,sessile oak
+SAMEA112794849,40718756,geographic location (country and/or sea),geo_loc_name,geographic location,France
+SAMEA112794849,40718756,geographic location (region and locality),,,Sillegny
+SAMEA112794849,40718756,provenance,,,Grésigne
+SAMEA112794849,40718756,provenance_ID,,,97
+SAMEA112794849,40718756,sample name,sample_name,sample name,GwOak-T62
+SAMEA112794849,40718756,scientific_name,,,Quercus petraea
+SAMEA112794849,40718756,tissue_type,tissue,tissue,leaf
+SAMEA112794872,40718779,ENA first public,,,2024-03-31
+SAMEA112794872,40718779,ENA-CHECKLIST,,,ERC000011
+SAMEA112794872,40718779,External Id,,,SAMEA112794872
+SAMEA112794872,40718779,INSDC center name,,,INRAE
+SAMEA112794872,40718779,INSDC last update,,,2023-03-17T15:29:34Z
+SAMEA112794872,40718779,INSDC status,,,public
+SAMEA112794872,40718779,Submitter Id,,,GwOak-T9
+SAMEA112794872,40718779,collection_date,collection_date,collection date,2016
+SAMEA112794872,40718779,common name,,,sessile oak
+SAMEA112794872,40718779,geographic location (country and/or sea),geo_loc_name,geographic location,France
+SAMEA112794872,40718779,geographic location (region and locality),,,Sillegny
+SAMEA112794872,40718779,provenance,,,Saint_Sauvant
+SAMEA112794872,40718779,provenance_ID,,,9
+SAMEA112794872,40718779,sample name,sample_name,sample name,GwOak-T9
+SAMEA112794872,40718779,scientific_name,,,Quercus petraea
+SAMEA112794872,40718779,tissue_type,tissue,tissue,leaf
+SAMEA112794915,40718822,ENA first public,,,2024-03-31
+SAMEA112794915,40718822,ENA-CHECKLIST,,,ERC000011
+SAMEA112794915,40718822,External Id,,,SAMEA112794915
+SAMEA112794915,40718822,INSDC center name,,,INRAE
+SAMEA112794915,40718822,INSDC last update,,,2023-03-17T15:29:35Z
+SAMEA112794915,40718822,INSDC status,,,public
+SAMEA112794915,40718822,Submitter Id,,,GwOak-T163
+SAMEA112794915,40718822,collection_date,collection_date,collection date,2016
+SAMEA112794915,40718822,common name,,,sessile oak
+SAMEA112794915,40718822,geographic location (country and/or sea),geo_loc_name,geographic location,France
+SAMEA112794915,40718822,geographic location (region and locality),,,Sillegny
+SAMEA112794915,40718822,provenance,,,Tronçais
+SAMEA112794915,40718822,provenance_ID,,,219
+SAMEA112794915,40718822,sample name,sample_name,sample name,GwOak-T163
+SAMEA112794915,40718822,scientific_name,,,Quercus petraea
+SAMEA112794915,40718822,tissue_type,tissue,tissue,leaf
+SAMEA14489996,40313867,ArrayExpress-SPECIES,,,Broad Oak
+SAMEA14489996,40313867,ENA-FIRST-PUBLIC,,,2023-09-08T13:57:20Z
+SAMEA14489996,40313867,organism,,,Quercus robur
+SAMEA14489996,40313867,ENA-LAST-UPDATE,,,2023-09-08T13:57:20Z
+SAMEA14489996,40313867,SUBJECT_ID,,,OAK_WW1512935139
+SAMEA14489996,40313867,scientific_name,,,Quercus robur
+SAMEA14489996,40313867,common name,,,Broad Oak
+SAMEA14489996,40313867,ENA-FIRST-PUBLIC,,,2023-09-08
+SAMEA14489996,40313867,ENA-LAST-UPDATE,,,2023-09-08
+SAMEA14490009,40322614,ArrayExpress-SPECIES,,,Broad Oak
+SAMEA14490009,40322614,ENA-FIRST-PUBLIC,,,2023-09-08T13:57:20Z
+SAMEA14490009,40322614,organism,,,Quercus robur
+SAMEA14490009,40322614,ENA-LAST-UPDATE,,,2023-09-08T13:57:20Z
+SAMEA14490009,40322614,SUBJECT_ID,,,OAK_WW1512935152
+SAMEA14490009,40322614,scientific_name,,,Quercus robur
+SAMEA14490009,40322614,common name,,,Broad Oak
+SAMEA14490009,40322614,ENA-FIRST-PUBLIC,,,2023-09-08
+SAMEA14490009,40322614,ENA-LAST-UPDATE,,,2023-09-08
+SAMEA14490013,40320721,ArrayExpress-SPECIES,,,Broad Oak
+SAMEA14490013,40320721,ENA-FIRST-PUBLIC,,,2023-09-08T13:57:21Z
+SAMEA14490013,40320721,organism,,,Quercus robur
+SAMEA14490013,40320721,ENA-LAST-UPDATE,,,2023-09-08T13:57:21Z
+SAMEA14490013,40320721,SUBJECT_ID,,,OAK_WW1512935155
+SAMEA14490013,40320721,scientific_name,,,Quercus robur
+SAMEA14490013,40320721,common name,,,Broad Oak
+SAMEA14490013,40320721,ENA-FIRST-PUBLIC,,,2023-09-08
+SAMEA14490013,40320721,ENA-LAST-UPDATE,,,2023-09-08
+SAMEA14490016,40319609,ArrayExpress-SPECIES,,,Broad Oak
+SAMEA14490016,40319609,ENA-FIRST-PUBLIC,,,2023-09-08T13:57:21Z
+SAMEA14490016,40319609,organism,,,Quercus robur
+SAMEA14490016,40319609,ENA-LAST-UPDATE,,,2023-09-08T13:57:21Z
+SAMEA14490016,40319609,SUBJECT_ID,,,OAK_WW1512935159
+SAMEA14490016,40319609,scientific_name,,,Quercus robur
+SAMEA14490016,40319609,common name,,,Broad Oak
+SAMEA14490016,40319609,ENA-FIRST-PUBLIC,,,2023-09-08
+SAMEA14490016,40319609,ENA-LAST-UPDATE,,,2023-09-08
+SAMEA14490017,40341994,ArrayExpress-SPECIES,,,Broad Oak
+SAMEA14490017,40341994,ENA-FIRST-PUBLIC,,,2023-09-08T13:57:21Z
+SAMEA14490017,40341994,organism,,,Quercus robur
+SAMEA14490017,40341994,ENA-LAST-UPDATE,,,2023-09-08T13:57:21Z
+SAMEA14490017,40341994,SUBJECT_ID,,,OAK_WW1512935161
+SAMEA14490017,40341994,scientific_name,,,Quercus robur
+SAMEA14490017,40341994,common name,,,Broad Oak
+SAMEA14490017,40341994,ENA-FIRST-PUBLIC,,,2023-09-08
+SAMEA14490017,40341994,ENA-LAST-UPDATE,,,2023-09-08
+SAMN14433613,14433613,isolate,isolate,isolate,individual 2
+SAMN14433613,14433613,age,age,age,not collected
+SAMN14433613,14433613,dev_stage,dev_stage,development stage,fruiting
+SAMN14433613,14433613,geo_loc_name,geo_loc_name,geographic location,"China:Yunnan,Shangri-la,Pudacuo-Sanba"
+SAMN14433613,14433613,tissue,tissue,tissue,Leaves
+SAMN14433616,14433616,isolate,isolate,isolate,individual 5
+SAMN14433616,14433616,age,age,age,not collected
+SAMN14433616,14433616,dev_stage,dev_stage,development stage,fruiting
+SAMN14433616,14433616,geo_loc_name,geo_loc_name,geographic location,"China:Yunnan,Shangri-la,Pudacuo-Sanba"
+SAMN14433616,14433616,tissue,tissue,tissue,Leaves
+SAMN14433640,14433640,isolate,isolate,isolate,individual 4
+SAMN14433640,14433640,age,age,age,not collected
+SAMN14433640,14433640,dev_stage,dev_stage,development stage,fruiting
+SAMN14433640,14433640,geo_loc_name,geo_loc_name,geographic location,"China:Yunnan,Shangri-la,Pudacuo-Sanba"
+SAMN14433640,14433640,tissue,tissue,tissue,Leaves
+SAMN14433646,14433646,isolate,isolate,isolate,individual 2
+SAMN14433646,14433646,age,age,age,not collected
+SAMN14433646,14433646,dev_stage,dev_stage,development stage,fruiting
+SAMN14433646,14433646,geo_loc_name,geo_loc_name,geographic location,"China:Sichuan,Xiangcheng,Maxionggou"
+SAMN14433646,14433646,tissue,tissue,tissue,Leaves
+SAMN14433648,14433648,isolate,isolate,isolate,individual 4
+SAMN14433648,14433648,age,age,age,not collected
+SAMN14433648,14433648,dev_stage,dev_stage,development stage,fruiting
+SAMN14433648,14433648,geo_loc_name,geo_loc_name,geographic location,"China:Sichuan,Xiangcheng,Maxionggou"
+SAMN14433648,14433648,tissue,tissue,tissue,Leaves
+SAMN14433652,14433652,isolate,isolate,isolate,individual 8
+SAMN14433652,14433652,age,age,age,not collected
+SAMN14433652,14433652,dev_stage,dev_stage,development stage,fruiting
+SAMN14433652,14433652,geo_loc_name,geo_loc_name,geographic location,"China:Sichuan,Xiangcheng,Maxionggou"
+SAMN14433652,14433652,tissue,tissue,tissue,Leaves
+SAMN17573486,17573486,isolate,isolate,isolate,Qaqu01.1
+SAMN17573486,17573486,dev_stage,dev_stage,development stage,Mature
+SAMN17573486,17573486,geo_loc_name,geo_loc_name,geographic location,China: mountain
+SAMN17573486,17573486,tissue,tissue,tissue,leaf
+SAMN19163032,19163032,isolate,isolate,isolate,Qlob.CRE.5.00F
+SAMN19163032,19163032,dev_stage,dev_stage,development stage,mature
+SAMN19163032,19163032,geo_loc_name,geo_loc_name,geographic location,"USA: Creston, CA"
+SAMN19163032,19163032,tissue,tissue,tissue,leaf
+SAMN19163032,19163032,biomaterial_provider,biomaterial_provider,biomaterial provider,"Victoria Sork, UCLA"
+SAMN19163032,19163032,lat_lon,lat_lon,latitude and longitude,35.53494 N 120.52401 W
+SAMN19163033,19163033,isolate,isolate,isolate,Qlob.CTW.6.00F
+SAMN19163033,19163033,dev_stage,dev_stage,development stage,mature
+SAMN19163033,19163033,geo_loc_name,geo_loc_name,geographic location,"USA: Cottonwood, CA"
+SAMN19163033,19163033,tissue,tissue,tissue,leaf
+SAMN19163033,19163033,biomaterial_provider,biomaterial_provider,biomaterial provider,"Victoria Sork, UCLA"
+SAMN19163033,19163033,lat_lon,lat_lon,latitude and longitude,40.3602 N 122.30672 W
+SAMN19163125,19163125,isolate,isolate,isolate,Qlob.PSK.4.00F
+SAMN19163125,19163125,dev_stage,dev_stage,development stage,mature
+SAMN19163125,19163125,geo_loc_name,geo_loc_name,geographic location,"USA: Paskenta, CA"
+SAMN19163125,19163125,tissue,tissue,tissue,leaf
+SAMN19163125,19163125,biomaterial_provider,biomaterial_provider,biomaterial provider,"Victoria Sork, UCLA"
+SAMN19163125,19163125,lat_lon,lat_lon,latitude and longitude,39.8862 N 122.53217 W
+SAMN19163129,19163129,isolate,isolate,isolate,Qlob.TAC.3.00F
+SAMN19163129,19163129,dev_stage,dev_stage,development stage,mature
+SAMN19163129,19163129,geo_loc_name,geo_loc_name,geographic location,"USA: Tehachapi, CA"
+SAMN19163129,19163129,tissue,tissue,tissue,leaf
+SAMN19163129,19163129,biomaterial_provider,biomaterial_provider,biomaterial provider,"Victoria Sork, UCLA"
+SAMN19163129,19163129,lat_lon,lat_lon,latitude and longitude,35.11596 N 118.48901 W
+SAMN19163131,19163131,isolate,isolate,isolate,Qlob.WIL.3.00F
+SAMN19163131,19163131,dev_stage,dev_stage,development stage,mature
+SAMN19163131,19163131,geo_loc_name,geo_loc_name,geographic location,"USA: Williams, CA"
+SAMN19163131,19163131,tissue,tissue,tissue,leaf
+SAMN19163131,19163131,biomaterial_provider,biomaterial_provider,biomaterial provider,"Victoria Sork, UCLA"
+SAMN19163131,19163131,lat_lon,lat_lon,latitude and longitude,39.08475 N 122.34658 W
+SAMN22137856,22137856,isolate,isolate,isolate,s0809-2-2_NDSW49956
+SAMN22137856,22137856,ecotype,ecotype,ecotype,not collected
+SAMN22137856,22137856,age,age,age,not collected
+SAMN22137856,22137856,dev_stage,dev_stage,development stage,not collected
+SAMN22137856,22137856,geo_loc_name,geo_loc_name,geographic location,China: Xingren
+SAMN22137856,22137856,tissue,tissue,tissue,leaf
+SAMN22137858,22137858,isolate,isolate,isolate,GJDNA122_BDSW190003088-1a
+SAMN22137858,22137858,ecotype,ecotype,ecotype,not collected
+SAMN22137858,22137858,age,age,age,not collected
+SAMN22137858,22137858,dev_stage,dev_stage,development stage,not collected
+SAMN22137858,22137858,geo_loc_name,geo_loc_name,geographic location,China: Rongjiang
+SAMN22137858,22137858,tissue,tissue,tissue,leaf
+SAMN22137880,22137880,isolate,isolate,isolate,s0915-2-8_NDSW54441
+SAMN22137880,22137880,ecotype,ecotype,ecotype,not collected
+SAMN22137880,22137880,age,age,age,not collected
+SAMN22137880,22137880,dev_stage,dev_stage,development stage,not collected
+SAMN22137880,22137880,geo_loc_name,geo_loc_name,geographic location,China: Taian
+SAMN22137880,22137880,tissue,tissue,tissue,leaf
+SAMN22137883,22137883,isolate,isolate,isolate,Z0916-1-5_NDSW54452
+SAMN22137883,22137883,ecotype,ecotype,ecotype,not collected
+SAMN22137883,22137883,age,age,age,not collected
+SAMN22137883,22137883,dev_stage,dev_stage,development stage,not collected
+SAMN22137883,22137883,geo_loc_name,geo_loc_name,geographic location,China: Dalian
+SAMN22137883,22137883,tissue,tissue,tissue,leaf
+SAMN22511218,22511218,cultivar,cultivar,cultivar,HBL
+SAMN22511218,22511218,dev_stage,dev_stage,development stage,HBL
+SAMN22511218,22511218,geo_loc_name,geo_loc_name,geographic location,China:Bomi
+SAMN22511218,22511218,tissue,tissue,tissue,Leaves
+SAMN22511233,22511233,cultivar,cultivar,cultivar,PM-16
+SAMN22511233,22511233,dev_stage,dev_stage,development stage,PM-16
+SAMN22511233,22511233,geo_loc_name,geo_loc_name,geographic location,USA:NewYork
+SAMN22511233,22511233,tissue,tissue,tissue,Leaves
+SAMN22511265,22511265,cultivar,cultivar,cultivar,QL-10-1
+SAMN22511265,22511265,dev_stage,dev_stage,development stage,QL-10-1
+SAMN22511265,22511265,geo_loc_name,geo_loc_name,geographic location,United Kingdom:London
+SAMN22511265,22511265,tissue,tissue,tissue,Leaves
+SAMN22511266,22511266,cultivar,cultivar,cultivar,QL-10-2
+SAMN22511266,22511266,dev_stage,dev_stage,development stage,QL-10-2
+SAMN22511266,22511266,geo_loc_name,geo_loc_name,geographic location,United Kingdom:London
+SAMN22511266,22511266,tissue,tissue,tissue,Leaves
+SAMN22511276,22511276,cultivar,cultivar,cultivar,s0716-3-5_NDSW49913
+SAMN22511276,22511276,dev_stage,dev_stage,development stage,s0716-3-5_NDSW49913
+SAMN22511276,22511276,geo_loc_name,geo_loc_name,geographic location,China:Henan
+SAMN22511276,22511276,tissue,tissue,tissue,Leaves
+SAMN22511286,22511286,cultivar,cultivar,cultivar,s0810-2-6_BDSW190010071-1a
+SAMN22511286,22511286,dev_stage,dev_stage,development stage,s0810-2-6_BDSW190010071-1a
+SAMN22511286,22511286,geo_loc_name,geo_loc_name,geographic location,China:Chongqing
+SAMN22511286,22511286,tissue,tissue,tissue,Leaves
+SAMN22511291,22511291,cultivar,cultivar,cultivar,s0916-2-12_NDSW54443
+SAMN22511291,22511291,dev_stage,dev_stage,development stage,s0916-2-12_NDSW54443
+SAMN22511291,22511291,geo_loc_name,geo_loc_name,geographic location,China:Shandong
+SAMN22511291,22511291,tissue,tissue,tissue,Leaves
+SAMN22511312,22511312,cultivar,cultivar,cultivar,s729-1-1
+SAMN22511312,22511312,dev_stage,dev_stage,development stage,s729-1-1
+SAMN22511312,22511312,geo_loc_name,geo_loc_name,geographic location,China:Tibet
+SAMN22511312,22511312,tissue,tissue,tissue,Leaves
+SAMN22511313,22511313,cultivar,cultivar,cultivar,s729-1-3
+SAMN22511313,22511313,dev_stage,dev_stage,development stage,s729-1-3
+SAMN22511313,22511313,geo_loc_name,geo_loc_name,geographic location,China:Tibet
+SAMN22511313,22511313,tissue,tissue,tissue,Leaves
+SAMN23012476,23012476,cultivar,cultivar,cultivar,QHD02
+SAMN23012476,23012476,dev_stage,dev_stage,development stage,not collected
+SAMN23012476,23012476,geo_loc_name,geo_loc_name,geographic location,China: HeiBei
+SAMN23012476,23012476,tissue,tissue,tissue,Leaves
+SAMN23012480,23012480,cultivar,cultivar,cultivar,SJZ01
+SAMN23012480,23012480,dev_stage,dev_stage,development stage,not collected
+SAMN23012480,23012480,geo_loc_name,geo_loc_name,geographic location,China: HeiBei
+SAMN23012480,23012480,tissue,tissue,tissue,Leaves
+SAMN23012492,23012492,cultivar,cultivar,cultivar,XC01
+SAMN23012492,23012492,dev_stage,dev_stage,development stage,not collected
+SAMN23012492,23012492,geo_loc_name,geo_loc_name,geographic location,China: SiChuang
+SAMN23012492,23012492,tissue,tissue,tissue,Leaves
+SAMN23012495,23012495,cultivar,cultivar,cultivar,XC04
+SAMN23012495,23012495,dev_stage,dev_stage,development stage,not collected
+SAMN23012495,23012495,geo_loc_name,geo_loc_name,geographic location,China: SiChuang
+SAMN23012495,23012495,tissue,tissue,tissue,Leaves
+SAMN23012502,23012502,cultivar,cultivar,cultivar,LJ02
+SAMN23012502,23012502,dev_stage,dev_stage,development stage,not collected
+SAMN23012502,23012502,geo_loc_name,geo_loc_name,geographic location,China: YunNan
+SAMN23012502,23012502,tissue,tissue,tissue,Leaves
+SAMN33427328,33427328,isolate,isolate,isolate,pseudo-F2
+SAMN33427328,33427328,ecotype,ecotype,ecotype,Indiana
+SAMN33427328,33427328,dev_stage,dev_stage,development stage,Mature tree
+SAMN33427328,33427328,geo_loc_name,geo_loc_name,geographic location,USA: Indiana
+SAMN33427328,33427328,tissue,tissue,tissue,Dormant leaf buds and twig bark tissues
+SAMN38043939,38043939,isolate,isolate,isolate,8
+SAMN38043939,38043939,cultivar,cultivar,cultivar,not collected
+SAMN38043939,38043939,ecotype,ecotype,ecotype,not collected
+SAMN38043939,38043939,age,age,age,not collected
+SAMN38043939,38043939,dev_stage,dev_stage,development stage,not collected
+SAMN38043939,38043939,collection_date,collection_date,collection date,not collected
+SAMN38043939,38043939,geo_loc_name,geo_loc_name,geographic location,China: Changsha
+SAMN38043939,38043939,tissue,tissue,tissue,leaf
+SAMN38043996,38043996,isolate,isolate,isolate,65
+SAMN38043996,38043996,cultivar,cultivar,cultivar,not collected
+SAMN38043996,38043996,ecotype,ecotype,ecotype,not collected
+SAMN38043996,38043996,age,age,age,not collected
+SAMN38043996,38043996,dev_stage,dev_stage,development stage,not collected
+SAMN38043996,38043996,collection_date,collection_date,collection date,not collected
+SAMN38043996,38043996,geo_loc_name,geo_loc_name,geographic location,China: Tianshui
+SAMN38043996,38043996,tissue,tissue,tissue,leaf
+SAMN38043997,38043997,isolate,isolate,isolate,66
+SAMN38043997,38043997,cultivar,cultivar,cultivar,not collected
+SAMN38043997,38043997,ecotype,ecotype,ecotype,not collected
+SAMN38043997,38043997,age,age,age,not collected
+SAMN38043997,38043997,dev_stage,dev_stage,development stage,not collected
+SAMN38043997,38043997,collection_date,collection_date,collection date,not collected
+SAMN38043997,38043997,geo_loc_name,geo_loc_name,geographic location,China: Tianshui
+SAMN38043997,38043997,tissue,tissue,tissue,leaf
+SAMN38043999,38043999,isolate,isolate,isolate,68
+SAMN38043999,38043999,cultivar,cultivar,cultivar,not collected
+SAMN38043999,38043999,ecotype,ecotype,ecotype,not collected
+SAMN38043999,38043999,age,age,age,not collected
+SAMN38043999,38043999,dev_stage,dev_stage,development stage,not collected
+SAMN38043999,38043999,collection_date,collection_date,collection date,not collected
+SAMN38043999,38043999,geo_loc_name,geo_loc_name,geographic location,China: Tianshui
+SAMN38043999,38043999,tissue,tissue,tissue,leaf
+SAMN38044001,38044001,isolate,isolate,isolate,70
+SAMN38044001,38044001,cultivar,cultivar,cultivar,not collected
+SAMN38044001,38044001,ecotype,ecotype,ecotype,not collected
+SAMN38044001,38044001,age,age,age,not collected
+SAMN38044001,38044001,dev_stage,dev_stage,development stage,not collected
+SAMN38044001,38044001,collection_date,collection_date,collection date,not collected
+SAMN38044001,38044001,geo_loc_name,geo_loc_name,geographic location,China: Xian
+SAMN38044001,38044001,tissue,tissue,tissue,leaf
+SAMN38693978,38693978,ecotype,ecotype,ecotype,USA: Indiana
+SAMN38693978,38693978,dev_stage,dev_stage,development stage,Adult
+SAMN38693978,38693978,collection_date,collection_date,collection date,2017-01-01/2017-12-31
+SAMN38693978,38693978,geo_loc_name,geo_loc_name,geographic location,USA: Indiana
+SAMN38693978,38693978,tissue,tissue,tissue,Leaves
+SAMN46722753,46722753,isolate,isolate,isolate,D21-315002 Mature Red Oak Tree
+SAMN46722753,46722753,dev_stage,dev_stage,development stage,Mature
+SAMN46722753,46722753,collection_date,collection_date,collection date,2021-05
+SAMN46722753,46722753,geo_loc_name,geo_loc_name,geographic location,"USA: MA, Cambridge"
+SAMN46722753,46722753,tissue,tissue,tissue,leaf
+SAMN46722754,46722754,isolate,isolate,isolate,D21-315003 Mature Red Oak Tree
+SAMN46722754,46722754,dev_stage,dev_stage,development stage,Mature
+SAMN46722754,46722754,collection_date,collection_date,collection date,2021-05
+SAMN46722754,46722754,geo_loc_name,geo_loc_name,geographic location,"USA: MA, Cambridge"
+SAMN46722754,46722754,tissue,tissue,tissue,leaf
+SAMN46722796,46722796,isolate,isolate,isolate,D21-315195 Mature Red Oak Tree
+SAMN46722796,46722796,dev_stage,dev_stage,development stage,Mature
+SAMN46722796,46722796,collection_date,collection_date,collection date,2021-05
+SAMN46722796,46722796,geo_loc_name,geo_loc_name,geographic location,"USA: MA, Cambridge"
+SAMN46722796,46722796,tissue,tissue,tissue,leaf
